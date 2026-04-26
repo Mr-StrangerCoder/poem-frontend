@@ -20,7 +20,7 @@ const Navbar = () => {
 
             {/* Logo */}
             <Link to="/" className="text-2xl font-bold tracking-wide">
-                🎭 Poem Store
+                🎭 RhymeWrite
             </Link>
 
             {/* Nav Links */}
