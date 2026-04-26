@@ -108,7 +108,7 @@ const AdminDashboard = () => {
 
                 {/* Header */}
                 <h1 className="text-3xl font-bold text-purple-700 mb-2">
-                    👑 Admin Dashboard
+                    👨🏻‍💻 Admin Dashboard
                 </h1>
                 <p className="text-gray-500 mb-6">
                     Manage all users and poems

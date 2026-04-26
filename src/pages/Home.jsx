@@ -293,10 +293,10 @@ const Home = () => {
                     }}
                     className="w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden select-none z-10">
 
-                    {/* Top gradient bar */}
+                
                     <div className="h-2 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500" />
 
-                    <div className="p-8">
+                    <div className="p-2 bg-pink">
 
                         {/* Author Row */}
                         <div className="flex items-center justify-between mb-6">
@@ -314,7 +314,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            {/* Edit & Delete */}
+                        
                             <div className="flex gap-2">
                                 <button
                                     onClick={() => navigate(`/edit-poem/${poem._id}`)}
@@ -329,22 +329,21 @@ const Home = () => {
                             </div>
                         </div>
 
-                        {/* Title */}
+                        
                         <h2 className="text-2xl font-bold text-gray-900 mb-3">
                             {poem.title}
                         </h2>
 
-                        {/* Accent line */}
                         <div className="w-10 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-5" />
 
-                        {/* Content */}
+                    
                         <div className="bg-purple-50 rounded-2xl p-4 mb-4">
                             <p className="text-gray-700 whitespace-pre-line leading-relaxed text-sm max-h-44 overflow-y-auto">
                                 {poem.content}
                             </p>
                         </div>
 
-                        {/* Dedicate */}
+                    
                         {poem.dedicate && (
                             <div className="bg-pink-50 border border-pink-100 rounded-2xl px-4 py-3 mb-4">
                                 <p className="text-pink-500 text-xs font-semibold">
@@ -353,7 +352,7 @@ const Home = () => {
                             </div>
                         )}
 
-                        {/* Bottom Row */}
+            
                         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                             <div className="flex items-center gap-2 bg-pink-50 px-4 py-2 rounded-xl">
                                 <span className="text-pink-500 text-sm font-bold">
@@ -362,7 +361,7 @@ const Home = () => {
                                 <span className="text-pink-300 text-xs">likes</span>
                             </div>
 
-                            {/* Navigation */}
+                
                             <div className="flex items-center gap-2">
                                 <button
                                     onClick={goPrev}
