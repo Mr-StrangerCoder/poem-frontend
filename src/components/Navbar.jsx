@@ -18,16 +18,16 @@ const Navbar = () => {
     return (
         <nav className="top-0 left-0 right-0 z-50 bg-gradient-to-r from-purple-700 to-pink-600 text-white px-6 py-4 flex items-center justify-between shadow-lg">
 
-            {/* Logo */}
+
             <Link to="/" className="text-2xl font-bold tracking-wide">
                 🎭 RhymeWrite
             </Link>
 
-            {/* Nav Links */}
+            
             <div className="flex items-center gap-4">
                 {user ? (
                     <>
-                        {/* Explore Reels - visible to all logged in users */}
+                    
                         <Link
                             to="/reels"
                             className={`font-medium transition px-3 py-1.5 rounded-full text-sm ${
@@ -38,7 +38,7 @@ const Navbar = () => {
                             🌐 Explore Poems
                         </Link>
 
-                        {/* My Dashboard */}
+                        
                         <Link
                             to="/"
                             className={`font-medium transition px-3 py-1.5 rounded-full text-sm ${
@@ -49,12 +49,12 @@ const Navbar = () => {
                             📖 My Poems
                         </Link>
 
-                        {/* User info */}
+                    
                         <span className="text-purple-200 text-sm hidden md:block">
-                            Hi, {user.name} {user.role === 'admin' ? '👑' : '✍️'}
+                            Hi, {user.name} {user.role === 'admin' ? '👨🏻‍💻' : '✍️'}
                         </span>
 
-                        {/* Admin only */}
+                        
                         {user.role === 'admin' && (
                             <Link
                                 to="/admin"
@@ -63,7 +63,7 @@ const Navbar = () => {
                                         ? 'bg-white/20 text-white'
                                         : 'text-purple-100 hover:text-white hover:bg-white/10'
                                 }`}>
-                                👑 Admin
+                                👨🏻‍💻 Admin
                             </Link>
                         )}
 
