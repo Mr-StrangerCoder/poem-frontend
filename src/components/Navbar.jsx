@@ -51,7 +51,7 @@ const Navbar = () => {
 
                     
                         <span className="text-purple-200 text-sm hidden md:block">
-                            Hi, {user.name} {user.role === 'admin' ? '👨🏻‍💻' : '✍️'}
+                            Hi, {user.name}
                         </span>
 
                         
