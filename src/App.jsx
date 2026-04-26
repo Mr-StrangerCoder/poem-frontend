@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import CreatePoem from './pages/CreatePoem';
 import EditPoem from './pages/EditPoem';
-import PoemDetail from './pages/PoemDetails';
+import PoemDetail from './pages/PoemDetail';
 import Navbar  from './components/Navbar';
 
 
