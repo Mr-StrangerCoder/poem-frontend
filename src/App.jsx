@@ -3,10 +3,13 @@ import Home from './pages/Home';
 import CreatePoem from './pages/CreatePoem';
 import EditPoem from './pages/EditPoem';
 import PoemDetail from './pages/PoemDetails';
+import Navbar  from './components/Navbar';
+
 
 function App() {
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/create-poem" element={<CreatePoem />} />
