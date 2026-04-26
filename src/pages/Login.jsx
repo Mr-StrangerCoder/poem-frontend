@@ -45,13 +45,19 @@ const Login = () => {
 
                 {/* Header */}
                 <div className="text-center mb-8">
-                    <h1 className="text-4xl font-bold text-purple-700">🎭 Poem Store</h1>
-                    <p className="text-gray-500 mt-2">Welcome back, poet!</p>
+                    <h1 className="text-4xl font-bold text-purple-700">
+                        🎭 Poem Store
+                    </h1>
+                    <p className="text-gray-500 mt-2">
+                        Welcome back, poet!
+                    </p>
                 </div>
 
                 {/* Card */}
                 <div className="bg-white rounded-2xl shadow-xl p-8">
-                    <h2 className="text-2xl font-bold text-gray-800 mb-6">Login</h2>
+                    <h2 className="text-2xl font-bold text-gray-800 mb-6">
+                        Login
+                    </h2>
 
                     {/* Error */}
                     {error && (
@@ -105,12 +111,40 @@ const Login = () => {
                     {/* Register Link */}
                     <p className="text-center text-gray-500 text-sm mt-6">
                         Don't have an account?{' '}
-                        <Link to="/register" className="text-purple-600 font-semibold hover:underline">
+                        <Link
+                            to="/register"
+                            className="text-purple-600 font-semibold hover:underline">
                             Register here
                         </Link>
                     </p>
 
                 </div>
+
+                {/* Support Section */}
+                <div className="mt-6 bg-white rounded-2xl shadow-sm p-5 text-center border border-gray-100">
+                    <p className="text-gray-500 text-sm font-medium mb-1">
+                        🛟 Need Help?
+                    </p>
+                    <p className="text-gray-400 text-xs mb-3">
+                        Having trouble logging in or any issue?
+                        Feel free to reach out to our support team.
+                    </p>
+                    <a 
+                        href="mailto:aadeshsonawane307@gmail.com"
+                        className="inline-flex items-center gap-2 bg-purple-50 text-purple-600 px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-purple-100 transition">
+                        📧 Contact Support
+                    </a>
+                    <p className="text-gray-300 text-xs mt-3">
+                        aadeshsonawane307@gmail.com
+                    </p>
+                    
+                </div>
+
+                {/* Footer */}
+                <p className="text-center text-gray-300 text-xs mt-6">
+                    © 2025 Poem Store · Made with ❤️ by Aadesh
+                </p>
+
             </div>
         </div>
     );

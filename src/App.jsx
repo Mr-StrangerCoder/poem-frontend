@@ -6,6 +6,7 @@ import PoemDetail from './pages/PoemDetail';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import AdminDashboard from './pages/AdminDashboard';
+import Reels from './pages/Reels';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/reels" element={<Reels />} />
         <Route path="/create-poem" element={<CreatePoem />} />
         <Route path="/edit-poem/:id" element={<EditPoem />} />
         <Route path="/poem/:id" element={<PoemDetail />} />
