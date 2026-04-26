@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import CreatePoem from './pages/CreatePoem';
+import EditPoem from './pages/EditPoem';
+import PoemDetail from './pages/PoemDetails';
 
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-purple-600">
-        Poem Store 🎭
-      </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/create-poem" element={<CreatePoem />} />
+        <Route path="/edit-poem/:id" element={<EditPoem />} />
+        <Route path="/poem/:id" element={<PoemDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
