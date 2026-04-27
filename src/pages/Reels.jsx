@@ -111,17 +111,18 @@ const Reels = () => {
         setIsSwiping(false);
     };
 
-    const handleShare = (type) => {
-        const text = `🎭 *${poem.title}*\n\n${poem.content}\n\n✍️ By ${poem.user?.name}${poem.dedicate ? `\n💝 Dedicated to ${poem.dedicate}` : ''}\n\n📖 Read more on Poem Store`;
-        const subject = `🎭 ${poem.title} - Poem Store`;
-        const body = `Hi,\n\nI wanted to share this beautiful poem with you!\n\n📖 ${poem.title}\n\n${poem.content}\n\n✍️ By ${poem.user?.name}${poem.dedicate ? `\n💝 Dedicated to ${poem.dedicate}` : ''}\n\nEnjoy reading!`;
+   const handleShare = (type) => {
+    const poemUrl = `${window.location.origin}/poem/${poem._id}`;
+    const text = `🎭 *${poem.title}*\n\n${poem.content}\n\n✍️ By ${poem.user?.name}${poem.dedicate ? `\n💝 Dedicated to ${poem.dedicate}` : ''}\n\n📖 Read more poems on Poem Store:\n${poemUrl}`;
+    const subject = `🎭 ${poem.title} - Poem Store`;
+    const body = `Hi,\n\nI wanted to share this beautiful poem with you!\n\n📖 ${poem.title}\n\n${poem.content}\n\n✍️ By ${poem.user?.name}${poem.dedicate ? `\n💝 Dedicated to ${poem.dedicate}` : ''}\n\n🌐 Read more poems here:\n${poemUrl}\n\nJoin Poem Store and share your own poems!`;
 
-        if (type === 'whatsapp') {
-            window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
-        } else if (type === 'email') {
-            window.open(`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
-        }
-    };
+    if (type === 'whatsapp') {
+        window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+    } else if (type === 'email') {
+        window.open(`mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
+    }
+};
 
     useEffect(() => { fetchPoems(); }, []);
 

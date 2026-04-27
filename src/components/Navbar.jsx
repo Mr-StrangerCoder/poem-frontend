@@ -7,8 +7,8 @@ const Navbar = () => {
     const location = useLocation();
 
     if (location.pathname === '/login' || location.pathname === '/register') {
-        return null;
-    }
+    return null;
+}
 
     const handleLogout = () => {
         logout();
