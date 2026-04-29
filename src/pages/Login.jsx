@@ -43,7 +43,7 @@ const Login = () => {
         <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center px-4">
             <div className="w-full max-w-md">
 
-                {/* Header */}
+        
                 <div className="text-center mb-8">
                     <h1 className="text-4xl font-bold text-purple-700">
                         🎭 RhymeWrite
@@ -53,13 +53,13 @@ const Login = () => {
                     </p>
                 </div>
 
-                {/* Card */}
+    
                 <div className="bg-white rounded-2xl shadow-xl p-8">
                     <h2 className="text-2xl font-bold text-gray-800 mb-6">
                         Login
                     </h2>
 
-                    {/* Error */}
+    
                     {error && (
                         <div className="bg-red-50 text-red-500 px-4 py-3 rounded-lg mb-4 text-sm">
                             {error}
@@ -68,7 +68,7 @@ const Login = () => {
 
                     <div className="flex flex-col gap-4">
 
-                        {/* Email */}
+    
                         <div>
                             <label className="block text-gray-700 font-medium mb-1 text-sm">
                                 Email
@@ -83,7 +83,7 @@ const Login = () => {
                             />
                         </div>
 
-                        {/* Password */}
+    
                         <div>
                             <label className="block text-gray-700 font-medium mb-1 text-sm">
                                 Password
@@ -98,7 +98,7 @@ const Login = () => {
                             />
                         </div>
 
-                        {/* Submit */}
+    
                         <button
                             onClick={handleSubmit}
                             disabled={loading}
@@ -108,7 +108,7 @@ const Login = () => {
 
                     </div>
 
-                    {/* Register Link */}
+            
                     <p className="text-center text-gray-500 text-sm mt-6">
                         Don't have an account?{' '}
                         <Link
@@ -120,7 +120,7 @@ const Login = () => {
 
                 </div>
 
-                {/* Support Section */}
+    
                 <div className="mt-6 bg-white rounded-2xl shadow-sm p-5 text-center border border-gray-100">
                     <p className="text-gray-500 text-sm font-medium mb-1">
                         🛟 Need Help?
@@ -140,7 +140,6 @@ const Login = () => {
                     
                 </div>
 
-                {/* Footer */}
                 <p className="text-center text-gray-300 text-xs mt-6">
                     © 2025 Poem Store · Made with ❤️ by Aadesh
                 </p>

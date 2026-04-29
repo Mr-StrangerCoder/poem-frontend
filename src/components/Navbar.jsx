@@ -67,7 +67,6 @@ const Navbar = () => {
                             </Link>
                         )}
 
-                        {/* Add Poem - only for non admin */}
                         {user.role !== 'admin' && (
                             <Link
                                 to="/create-poem"
@@ -76,7 +75,6 @@ const Navbar = () => {
                             </Link>
                         )}
 
-                        {/* Logout */}
                         <button
                             onClick={handleLogout}
                             className="bg-white/20 text-white px-4 py-2 rounded-full font-semibold hover:bg-white/30 transition duration-200 text-sm">

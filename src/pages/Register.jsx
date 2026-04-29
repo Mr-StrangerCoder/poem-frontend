@@ -37,17 +37,17 @@ const Register = () => {
         <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center px-4">
             <div className="w-full max-w-md">
 
-                {/* Header */}
+    
                 <div className="text-center mb-8">
                     <h1 className="text-4xl font-bold text-purple-700">🎭 Poem Store</h1>
                     <p className="text-gray-500 mt-2">Join our poetry community!</p>
                 </div>
 
-                {/* Card */}
+        
                 <div className="bg-white rounded-2xl shadow-xl p-8">
                     <h2 className="text-2xl font-bold text-gray-800 mb-6">Register</h2>
 
-                    {/* Error */}
+        
                     {error && (
                         <div className="bg-red-50 text-red-500 px-4 py-3 rounded-lg mb-4 text-sm">
                             {error}
@@ -56,7 +56,7 @@ const Register = () => {
 
                     <div className="flex flex-col gap-4">
 
-                        {/* Name */}
+    
                         <div>
                             <label className="block text-gray-700 font-medium mb-1 text-sm">
                                 Full Name
@@ -71,7 +71,7 @@ const Register = () => {
                             />
                         </div>
 
-                        {/* Email */}
+        
                         <div>
                             <label className="block text-gray-700 font-medium mb-1 text-sm">
                                 Email
@@ -86,7 +86,7 @@ const Register = () => {
                             />
                         </div>
 
-                        {/* Password */}
+    
                         <div>
                             <label className="block text-gray-700 font-medium mb-1 text-sm">
                                 Password
@@ -101,7 +101,7 @@ const Register = () => {
                             />
                         </div>
 
-                        {/* Submit */}
+    
                         <button
                             onClick={handleSubmit}
                             disabled={loading}
@@ -111,7 +111,7 @@ const Register = () => {
 
                     </div>
 
-                    {/* Login Link */}
+        
                     <p className="text-center text-gray-500 text-sm mt-6">
                         Already have an account?{' '}
                         <Link to="/login" className="text-purple-600 font-semibold hover:underline">

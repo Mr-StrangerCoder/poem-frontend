@@ -143,7 +143,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Empty State */}
+            
                 <div className="flex-1 flex flex-col items-center justify-center">
                     <p className="text-7xl mb-4">✍️</p>
                     <p className="text-2xl font-bold text-gray-700 mb-2">No poems yet</p>
@@ -163,10 +163,10 @@ const Home = () => {
     return (
         <div className="h-screen flex overflow-hidden bg-gradient-to-br from-purple-50 to-pink-50">
 
-            {/* Left Sidebar */}
+    
             <div className="w-72 h-full flex flex-col overflow-hidden bg-gradient-to-b from-purple-700 via-purple-600 to-pink-500 shadow-2xl hidden md:flex">
 
-                {/* User Profile - fixed */}
+        
                 <div className="shrink-0 px-5 py-6">
                     <div className="flex items-center gap-3 mb-6">
                         <div className="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-white font-bold text-lg shadow-inner">
@@ -180,7 +180,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    {/* Stats */}
+    
                     <div className="flex gap-3">
                         <div className="flex-1 bg-white/15 rounded-2xl px-3 py-3 text-center">
                             <p className="text-white font-bold text-2xl">{poems.length}</p>
@@ -195,7 +195,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Action Buttons - fixed */}
+    
                 <div className="shrink-0 px-4">
                     <button
                         onClick={() => navigate('/create-poem')}
@@ -209,15 +209,15 @@ const Home = () => {
                     </button>
                 </div>
 
-                {/* Divider - fixed */}
+    
                 <div className="shrink-0 mx-4 my-4 border-t border-white/20" />
 
-                {/* Label - fixed */}
+
                 <p className="shrink-0 px-5 text-purple-200 text-xs font-semibold uppercase tracking-widest mb-2">
                     My Poems
                 </p>
 
-                {/* Poem List - ONLY THIS SCROLLS */}
+    
                 <div className="flex-1 min-h-0 overflow-y-auto px-3 pb-4 space-y-1">
                     {poems.map((p, index) => (
                         <div
@@ -256,14 +256,14 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* Main Content */}
+
             <div className="flex-1 flex flex-col items-center justify-center px-6 relative overflow-hidden">
 
-                {/* Background decoration */}
+    
                 <div className="absolute top-0 right-0 w-64 h-64 bg-purple-200 rounded-full opacity-20 -translate-y-32 translate-x-32" />
                 <div className="absolute bottom-0 left-0 w-48 h-48 bg-pink-200 rounded-full opacity-20 translate-y-24 -translate-x-24" />
 
-                {/* Progress Dots */}
+    
                 <div className="flex gap-1.5 mb-6 z-10">
                     {poems.map((_, i) => (
                         <div
@@ -278,7 +278,7 @@ const Home = () => {
                     ))}
                 </div>
 
-                {/* Poem Card */}
+    
                 <div
                     onMouseDown={handleDragStart}
                     onMouseMove={handleDragMove}
@@ -295,12 +295,12 @@ const Home = () => {
                     }}
                     className="w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden select-none z-10">
 
-                    {/* Top gradient bar */}
+    
                     <div className="h-2 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500" />
 
                     <div className="p-8">
 
-                        {/* Author Row */}
+    
                         <div className="flex items-center justify-between mb-6">
                             <div className="flex items-center gap-3">
                                 <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold">
@@ -314,7 +314,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            {/* Edit & Delete */}
+    
                             <div className="flex gap-2">
                                 <button
                                     onClick={() => navigate(`/edit-poem/${poem._id}`)}
@@ -329,22 +329,22 @@ const Home = () => {
                             </div>
                         </div>
 
-                        {/* Title */}
+    
                         <h2 className="text-2xl font-bold text-gray-900 mb-3">
                             {poem.title}
                         </h2>
 
-                        {/* Accent line */}
+    
                         <div className="w-10 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-5" />
 
-                        {/* Content */}
+    
                         <div className="bg-purple-50 rounded-2xl p-4 mb-4">
                             <p className="text-gray-700 whitespace-pre-line leading-relaxed text-sm max-h-44 overflow-y-auto">
                                 {poem.content}
                             </p>
                         </div>
 
-                        {/* Dedicate */}
+    
                         {poem.dedicate && (
                             <div className="bg-pink-50 border border-pink-100 rounded-2xl px-4 py-3 mb-4">
                                 <p className="text-pink-500 text-xs font-semibold">
@@ -353,7 +353,7 @@ const Home = () => {
                             </div>
                         )}
 
-                        {/* Bottom Row */}
+    
                         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                             <div className="flex items-center gap-2 bg-pink-50 px-4 py-2 rounded-xl">
                                 <span className="text-pink-500 text-sm font-bold">
@@ -362,7 +362,7 @@ const Home = () => {
                                 <span className="text-pink-300 text-xs">likes</span>
                             </div>
 
-                            {/* Navigation */}
+        
                             <div className="flex items-center gap-2">
                                 <button
                                     onClick={goPrev}
@@ -384,7 +384,6 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Swipe hint */}
                 <p className="text-purple-300 text-xs mt-5 z-10">
                     ← swipe left or right to navigate →
                 </p>

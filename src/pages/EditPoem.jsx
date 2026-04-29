@@ -80,7 +80,6 @@ const EditPoem = () => {
         <div className="h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center px-4">
             <div className="w-full max-w-2xl bg-white rounded-2xl shadow-xl p-8">
 
-                {/* Heading */}
                 <h1 className="text-2xl font-bold text-purple-700 mb-1 text-center">
                     ✏️ Edit Poem
                 </h1>
@@ -88,7 +87,7 @@ const EditPoem = () => {
                     Update your poem
                 </p>
 
-                {/* Error */}
+    
                 {error && (
                     <div className="bg-red-50 text-red-500 px-4 py-3 rounded-lg mb-4 text-sm">
                         {error}
@@ -97,7 +96,7 @@ const EditPoem = () => {
 
                 <div className="flex flex-col gap-4">
 
-                    {/* Title & Author */}
+    
                     <div className="flex gap-3">
                         <div className="flex-1">
                             <label className="block text-gray-700 font-medium mb-1 text-sm">
@@ -125,7 +124,7 @@ const EditPoem = () => {
                         </div>
                     </div>
 
-                    {/* Content */}
+        
                     <div>
                         <label className="block text-gray-700 font-medium mb-1 text-sm">
                             Poem Content
@@ -139,7 +138,7 @@ const EditPoem = () => {
                         />
                     </div>
 
-                    {/* Dedicate */}
+    
                     <div>
                         <label className="block text-gray-700 font-medium mb-1 text-sm">
                             Dedicate To{' '}
@@ -154,7 +153,7 @@ const EditPoem = () => {
                         />
                     </div>
 
-                    {/* Buttons */}
+
                     <div className="flex gap-3">
                         <button
                             onClick={() => navigate('/')}

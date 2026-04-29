@@ -41,7 +41,7 @@ const CreatePoem = () => {
         }
     };
 
-    // Redirect if not logged in
+    
     if (!user) {
         navigate('/login');
         return null;
@@ -51,15 +51,13 @@ const CreatePoem = () => {
         <div className="h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex items-center justify-center px-4">
             <div className="w-full max-w-2xl bg-white rounded-2xl shadow-xl p-8">
 
-                {/* Heading */}
+        
                 <h1 className="text-2xl font-bold text-purple-700 mb-1 text-center">
                     ✍️ Write a New Poem
                 </h1>
                 <p className="text-center text-gray-400 text-sm mb-6">
                     Share your thoughts with the world
                 </p>
-
-                {/* Error */}
                 {error && (
                     <div className="bg-red-50 text-red-500 px-4 py-3 rounded-lg mb-4 text-sm">
                         {error}
@@ -68,7 +66,7 @@ const CreatePoem = () => {
 
                 <div className="flex flex-col gap-4">
 
-                    {/* Title & Author */}
+    
                     <div className="flex gap-3">
                         <div className="flex-1">
                             <label className="block text-gray-700 font-medium mb-1 text-sm">
@@ -98,7 +96,7 @@ const CreatePoem = () => {
                         </div>
                     </div>
 
-                    {/* Content */}
+        
                     <div>
                         <label className="block text-gray-700 font-medium mb-1 text-sm">
                             Poem Content <span className="text-red-400">*</span>
@@ -113,7 +111,7 @@ const CreatePoem = () => {
                         />
                     </div>
 
-                    {/* Dedicate */}
+    
                     <div>
                         <label className="block text-gray-700 font-medium mb-1 text-sm">
                             Dedicate To{' '}
@@ -129,7 +127,7 @@ const CreatePoem = () => {
                         />
                     </div>
 
-                    {/* Buttons */}
+            
                     <div className="flex gap-3">
                         <button
                             onClick={() => navigate('/')}

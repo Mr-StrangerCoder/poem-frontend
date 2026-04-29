@@ -9,7 +9,6 @@ export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Load user from cookies on app start
         const savedToken = Cookies.get('token');
         const savedUser = Cookies.get('user');
         if (savedToken && savedUser) {

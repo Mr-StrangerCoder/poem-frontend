@@ -56,15 +56,15 @@ const PoemDetail = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 flex flex-col items-center justify-center px-4 py-8">
 
-            {/* Card */}
+        
             <div className="w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden">
 
-                {/* Top Bar */}
+    
                 <div className="h-2 bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500" />
 
                 <div className="p-8">
 
-                    {/* Author */}
+            
                     <div className="flex items-center gap-3 mb-6">
                         <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-lg">
                             {poem.user?.name?.charAt(0).toUpperCase()}
@@ -79,22 +79,22 @@ const PoemDetail = () => {
                         </div>
                     </div>
 
-                    {/* Title */}
+    
                     <h1 className="text-2xl font-bold text-gray-900 mb-3">
                         {poem.title}
                     </h1>
 
-                    {/* Accent */}
+    
                     <div className="w-10 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-5" />
 
-                    {/* Content */}
+    
                     <div className="bg-purple-50 rounded-2xl p-5 mb-4">
                         <p className="text-gray-700 whitespace-pre-line leading-relaxed">
                             {poem.content}
                         </p>
                     </div>
 
-                    {/* Dedicate */}
+    
                     {poem.dedicate && (
                         <div className="bg-pink-50 border border-pink-100 rounded-2xl px-4 py-3 mb-6">
                             <p className="text-pink-500 text-sm font-semibold">
@@ -103,13 +103,13 @@ const PoemDetail = () => {
                         </div>
                     )}
 
-                    {/* Likes */}
+    
                     <div className="flex items-center gap-2 mb-6">
                         <span className="text-pink-500 font-bold">❤️ {poem.likes}</span>
                         <span className="text-gray-400 text-sm">people liked this poem</span>
                     </div>
 
-                    {/* CTA Section - Show only if not logged in */}
+                  
                     {!user ? (
                         <div className="bg-gradient-to-r from-purple-600 to-pink-500 rounded-2xl p-6 text-center">
                             <p className="text-white font-bold text-lg mb-1">
@@ -141,7 +141,7 @@ const PoemDetail = () => {
                 </div>
             </div>
 
-            {/* Branding */}
+    
             <div className="mt-6 text-center">
                 <p className="text-gray-400 text-sm">
                     🎭 <span className="font-semibold text-purple-600">Poem Store</span> — Share your poetry with the world

@@ -148,8 +148,6 @@ const AdminDashboard = () => {
                         Manage all users and poems
                     </p>
                 </div>
-
-                {/* Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                     <div className="bg-white rounded-2xl shadow-sm p-4 text-center">
                         <p className="text-3xl font-bold text-purple-700">
@@ -177,7 +175,6 @@ const AdminDashboard = () => {
                     </div>
                 </div>
 
-                {/* Tabs */}
                 <div className="flex gap-3 mb-4">
                     <button
                         onClick={() => setActiveTab('users')}
@@ -199,11 +196,11 @@ const AdminDashboard = () => {
                     </button>
                 </div>
 
-                {/* Users Table */}
+
                 {activeTab === 'users' && (
                     <div className="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col flex-1">
 
-                        {/* Search */}
+
                         <div className="px-6 py-3 border-b border-gray-100">
                             <input
                                 type="text"
@@ -214,7 +211,7 @@ const AdminDashboard = () => {
                             />
                         </div>
 
-                        {/* Scrollable List */}
+    
                         <div className="flex-1 overflow-y-auto">
                             <table className="w-full">
                                 <thead className="bg-purple-50 sticky top-0 z-10">
@@ -286,7 +283,7 @@ const AdminDashboard = () => {
                                 </tbody>
                             </table>
 
-                            {/* Empty State */}
+                
                             {users.length === 0 && (
                                 <div className="text-center py-12">
                                     <p className="text-4xl mb-3">👥</p>
@@ -297,11 +294,11 @@ const AdminDashboard = () => {
                     </div>
                 )}
 
-                {/* Poems Table */}
+    
                 {activeTab === 'poems' && (
                     <div className="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col flex-1">
 
-                        {/* Search */}
+    
                         <div className="px-6 py-3 border-b border-gray-100">
                             <input
                                 type="text"
@@ -312,7 +309,7 @@ const AdminDashboard = () => {
                             />
                         </div>
 
-                        {/* Scrollable List */}
+                
                         <div className="flex-1 overflow-y-auto">
                             <table className="w-full">
                                 <thead className="bg-pink-50 sticky top-0 z-10">
@@ -360,7 +357,7 @@ const AdminDashboard = () => {
                                 </tbody>
                             </table>
 
-                            {/* Empty State */}
+        
                             {poems.length === 0 && (
                                 <div className="text-center py-12">
                                     <p className="text-4xl mb-3">📖</p>
@@ -372,7 +369,7 @@ const AdminDashboard = () => {
                 )}
             </div>
 
-            {/* Reset Password Modal */}
+
             {resetModal && (
                 <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4">
                     <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
